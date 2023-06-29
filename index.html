@@ -62,7 +62,11 @@
       <section class="section-one">
         <div class="box-solutions container">
           <h1 class="title-one">Effective Solutions for Your Business</h1>
-          <button class="button order-service" type="button" data-modal-open>
+          <button
+            class="button button-blue button-size order-service"
+            type="button"
+            data-modal-open
+          >
             Order Service
           </button>
         </div>
@@ -430,6 +434,24 @@
             </li>
           </ul>
         </div>
+        <form class="email-form">
+          <p class="caption text">Subscribe</p>
+          <label class="label">
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              placeholder="Email"
+              required
+            />
+          </label>
+          <button class="button button-blue button-submit" type="submit">
+            Subscribe
+            <svg class="icon-submit" width="24" height="24">
+              <use href="./images/icons.svg#icon-plane"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
 
@@ -437,11 +459,106 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button-close" type="button" data-modal-close>
-          <svg class="icon-close" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
+
+        <div class="modal-header">
+          <button class="button-close" type="button" data-modal-close>
+            <svg class="icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <form class="modal-content">
+
+          <p class="caption-modal text">
+            Leave your contacts and we will call you back
+          </p>
+
+          <label class="label-modal mb">
+            Name
+            <div class="icon-input-wrap">
+              <div class="icon-wrap-modal">
+                <svg class="icon-modal" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+              <input
+                class="input-modal"
+                type="text"
+                name="user-name"
+                id="user-name"
+                required
+              />
+            </div>
+          </label>
+
+          <label class="label-modal mb">
+            Phone
+            <div class="icon-input-wrap">
+              <div class="icon-wrap-modal">
+                <svg class="icon-modal" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            <input
+              class="input-modal"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              required
+            />
+            </div>
+          </label>
+
+          <label class="label-modal mb">
+            Email
+            <div class="icon-input-wrap">
+              <div class="icon-wrap-modal">
+                <svg class="icon-modal" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            <input
+              class="input-modal"
+              type="email"
+              name="user-email"
+              id="user-email"
+              required
+            />
+            </div>
+          </label>
+
+          <label class="label-modal">
+            Comment
+            <textarea
+              class="textarea-modal"
+              name="user-comment"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+
+          <div class="checkbox-wrap">
+            <input
+              class="input-modal-checkbox"
+              type="checkbox"
+              name="contact-tel"
+              value="agreement"
+              id="agreement"
+              required
+            />
+            <span class="check-box"></span>
+              <!--  Оригінальний чекбокс про прийняття ліцензійної угоди у формі заявки прихований. -->
+            <label class="label-modal-checkbox" for="agreement">
+              I accept the terms and conditions of the <a class="privacy-policy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="button button-blue button-size submit" type="submit">
+            Send
+          </button>
+        </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
