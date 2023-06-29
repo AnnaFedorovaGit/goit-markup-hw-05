@@ -437,18 +437,19 @@
 
         <!--  -->
 
-        <div class="form-container">
+        <div class="footer-form-container">
           <p class="caption text">Subscribe</p>
-          <form class="email-form">
-            <label class="label">
+          <form class="footer-email-form">
+            <label class="footer-label">
               <input
-                class="form-input"
+                class="footer-input"
                 type="email"
                 name="user-email"
-                placeholder="Email"
+                placeholder="E-mail"
                 required
               />
             </label>
+
             <button class="button button-blue button-submit" type="submit">
               Subscribe
               <svg class="icon-submit" width="24" height="24">
@@ -476,10 +477,10 @@
 
         <form class="modal-form">
           <div class="modal-form-content">
-            <label class="label-modal mb" for="user-name">Name</label>
+            <label class="form-text label-modal" for="user-name">Name</label>
             <div class="icon-input-wrap">
               <input
-                class="input-modal"
+                class="input-form input-modal"
                 type="text"
                 name="user-name"
                 id="user-name"
@@ -492,10 +493,10 @@
           </div>
 
           <div class="modal-form-content">
-            <label class="label-modal mb" for="user-tel">Phone</label>
+            <label class="form-text label-modal" for="user-tel">Phone</label>
             <div class="icon-input-wrap">
               <input
-                class="input-modal"
+                class="input-form input-modal"
                 type="tel"
                 name="user-tel"
                 id="user-tel"
@@ -508,10 +509,10 @@
           </div>
 
           <div class="modal-form-content">
-            <label class="label-modal mb" for="user-email">Email</label>
+            <label class="form-text label-modal" for="user-email">Email</label>
             <div class="icon-input-wrap">
               <input
-                class="input-modal"
+                class="input-form input-modal"
                 type="email"
                 name="user-email"
                 id="user-email"
@@ -523,20 +524,17 @@
             </div>
           </div>
 
-          <!--  -->
-
           <div class="modal-form-comment">
-            <label class="label-modal" for="user-comment">Comment</label>
+            <label class="form-text label-modal" for="user-comment"
+              >Comment</label
+            >
             <textarea
-              class="textarea-modal"
+              class="input-form form-text textarea-modal"
               name="user-comment"
               id="user-comment"
               placeholder="Text input"
-            >
-            </textarea>
+            ></textarea>
           </div>
-
-          <!--  -->
 
           <div class="checkbox-wrap">
             <input
@@ -545,11 +543,12 @@
               name="user-privacy"
               id="user-privacy"
               value="true"
+              checked
               required
             />
-            <label class="label-modal-checkbox" for="user-privacy">
+            <label class="form-text label-modal-checkbox" for="user-privacy">
               <span class="check-box">
-                <svg class="icon-modal" width="10" height="8">
+                <svg class="icon-modal-checkbox" width="10" height="8">
                   <use href="./images/icons.svg#icon-click"></use>
                 </svg>
               </span>
@@ -557,8 +556,6 @@
               <a class="privacy-policy-link" href=""> Privacy Policy</a>
             </label>
           </div>
-
-          <!--  -->
 
           <button class="button button-blue button-size submit" type="submit">
             Send
